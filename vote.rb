@@ -1,7 +1,8 @@
 require 'sinatra'
 
 get '/' do
-    'Hello, voter!'
+    @title = 'Welcome to my Food Voting application!'
+    erb :index
 end
 
 Choices = {
