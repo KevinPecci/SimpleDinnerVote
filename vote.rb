@@ -1,5 +1,5 @@
-require 'sinatra'
 require 'yaml/store'
+require 'sinatra'
 
 get '/' do
     @title = 'Welcome to my Food Voting application!'
@@ -21,7 +21,7 @@ end
 get '/results' do
     @title = 'Results so far:'
     @store = YAML::Store.new 'votes.yml'
-    @votes = @store.transaction ( @store['votes'])
+    @votes = @store.transaction { @store['votes']}
     erb :results
 end
 
