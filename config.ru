@@ -1,2 +1,2 @@
-require '/.config'
+require '/.vote'
 run Sinatra::Application
