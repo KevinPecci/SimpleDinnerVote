@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <body class='container'>
-        <p>You cast: <%= Choices[@vote] %></p>
-        <p><a href='/results'>See the results!</a></p>
-    </body>
-</html>
+<p>
+    <%= Choices[@vote] %>
+</p>
+<form method="get" action="/results">
+    <button type="submit" class="btn btn-primary"> See the Results</button>
+</form>
