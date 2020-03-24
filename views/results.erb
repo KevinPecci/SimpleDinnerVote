@@ -5,7 +5,7 @@
             <td><%= @votes[id] || 0 %></td>
             <td>
                 <% (0..@votes[id] -1).each do%>
-                    <img src="/images/<%=@vote.downcase %>.jpg" width="50" height="50">
+                    <img src="/images/<%=id.downcase %>.jpg" width="50" height="50">
                 <%end%>
             </td>
         </tr>
