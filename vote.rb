@@ -2,7 +2,7 @@ require 'yaml/store'
 require 'sinatra'
 
 get '/' do
-    @title = 'Welcome to my Food Voting application!'
+    @title = 'Vote for dinner tonight'
     erb :index
 end
 
