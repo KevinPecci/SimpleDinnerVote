@@ -28,6 +28,6 @@ end
 Choices = {
     'HAM' => 'Hamburger',
     'PIZ' => 'Pizza',
-    'CUR' => 'Cury',
+    'CUR' => 'Curry',
     'NOO' => 'Noodles',
 }
