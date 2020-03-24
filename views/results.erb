@@ -1,8 +1,8 @@
-<table class="table table-hover table-striped">
+<table class ="table table-hover table-striped">
     <% Choices.each do |id, text| %>
         <tr>
             <th><%= text %></th>
-            <td><%= @votes[id] || 0 %></td>
+            <td><%= @votes[id] || 0 %>
             <td>
                 <% (0..@votes[id] -1).each do%>
                     <img src="/images/<%=id.downcase %>.jpg" width="50" height="50">
@@ -12,4 +12,6 @@
     <% end %>
 </table>
 
-<p><a href= '/'>Cast more votes!</a></p>
+<form method="get" action="/">
+ <button type="submit" class="btn  btn-primary">Cast More Votes!</button>
+</form> 

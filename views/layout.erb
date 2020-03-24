@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='UTF-8' />
-        <title>Vote for dinner!</title>
-        <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
-    </head>
-    <body class='container'>
-        <h1><%= @title %></h1>
-        <%= yield %>
-    </body>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Vote for Dinner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel=”stylesheet” type=”text/css” href=”/style.css” />
+  </head>
+  <body class='container'>
+    <nav class="navbar navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">Vote</a>
+      <a class="navbar-brand" href="/results">Results</a>
+    </nav>
+    <h2><%= @title %></h2>
+    <%= yield %>
+  </body>
 </html>
