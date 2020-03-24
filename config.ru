@@ -1,2 +1,2 @@
-require '/.vote'
+require './vote'
 run Sinatra::Application
